@@ -2,6 +2,26 @@
 
 一个现代化的研发自动化管理平台，旨在提高开发团队的协作效率和项目管理能力。
 
+## 🖼 界面截图
+
+> 以下截图使用演示数据（`example.com` 域名），不含任何真实内网地址与业务数据。
+
+| 监控面板 | 项目管理 |
+| --- | --- |
+| ![监控面板](docs/screenshots/dashboard.png) | ![项目管理](docs/screenshots/projects.png) |
+
+| 项目详情 · 项目信息 | 项目详情 · 项目模块 |
+| --- | --- |
+| ![项目信息](docs/screenshots/project-info.png) | ![项目模块](docs/screenshots/project-modules.png) |
+
+| 项目详情 · 交付记录（同步按钮带「同步中」状态，防重复点击） | 技术分类 |
+| --- | --- |
+| ![交付记录](docs/screenshots/project-delivery.png) | ![技术分类](docs/screenshots/tech-categories.png) |
+
+| 代码审查 | 系统配置 · 网站配置 |
+| --- | --- |
+| ![代码审查](docs/screenshots/code-review.png) | ![系统配置](docs/screenshots/config.png) |
+
 ## 🚀 快速开始
 
 ### 环境要求
