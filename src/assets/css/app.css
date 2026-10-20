@@ -1,0 +1,300 @@
+/* 全局样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f5f7fa;
+    color: #303133;
+    line-height: 1.6;
+}
+
+/* 布局样式 */
+.header {
+    background-color: #fff;
+    border-bottom: 1px solid #e4e7ed;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 0 20px;
+}
+
+.logo h1 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #409EFF;
+    margin: 0;
+}
+
+.main-content {
+    margin-top: 60px;
+    min-height: calc(100vh - 120px);
+    padding: 20px;
+}
+
+.footer {
+    background-color: #fff;
+    border-top: 1px solid #e4e7ed;
+    text-align: center;
+    padding: 20px;
+    color: #909399;
+}
+
+/* Element Plus 样式覆盖 */
+.el-menu--horizontal {
+    border-bottom: none;
+}
+
+.el-menu--horizontal > .el-menu-item {
+    height: 60px;
+    line-height: 60px;
+    border-bottom: none;
+}
+
+.el-menu--horizontal > .el-menu-item.is-active {
+    border-bottom: 2px solid #409EFF;
+    color: #409EFF;
+}
+
+/* 卡片样式 */
+.el-card {
+    border-radius: 8px;
+    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.el-card__header {
+    background-color: #fafafa;
+    border-bottom: 1px solid #e4e7ed;
+    padding: 15px 20px;
+}
+
+/* 表格样式 */
+.el-table {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.el-table th {
+    background-color: #fafafa;
+    color: #606266;
+    font-weight: 600;
+}
+
+/* 按钮样式 */
+.el-button {
+    border-radius: 6px;
+    font-weight: 500;
+}
+
+.el-button--primary {
+    background-color: #409EFF;
+    border-color: #409EFF;
+}
+
+.el-button--success {
+    background-color: #67C23A;
+    border-color: #67C23A;
+}
+
+.el-button--warning {
+    background-color: #E6A23C;
+    border-color: #E6A23C;
+}
+
+.el-button--danger {
+    background-color: #F56C6C;
+    border-color: #F56C6C;
+}
+
+/* 表单样式 */
+.el-form-item__label {
+    font-weight: 500;
+    color: #606266;
+}
+
+.el-input__inner {
+    border-radius: 6px;
+}
+
+.el-select .el-input__inner {
+    border-radius: 6px;
+}
+
+/* 分页样式 */
+.el-pagination {
+    text-align: right;
+    margin-top: 20px;
+}
+
+/* 标签样式 */
+.el-tag {
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+/* 链接样式 */
+.el-link {
+    text-decoration: none;
+}
+
+.el-link:hover {
+    text-decoration: underline;
+}
+
+/* 消息提示样式 */
+.el-alert {
+    margin-bottom: 20px;
+    border-radius: 6px;
+}
+
+/* 加载状态样式 */
+.el-loading-mask {
+    border-radius: 8px;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .header-content {
+        padding: 0 10px;
+    }
+    
+    .logo h1 {
+        font-size: 16px;
+    }
+    
+    .main-content {
+        padding: 10px;
+    }
+    
+    .el-table {
+        font-size: 12px;
+    }
+    
+    .el-button {
+        font-size: 12px;
+        padding: 8px 12px;
+    }
+}
+
+/* 自定义工具类 */
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.ml-10 {
+    margin-left: 10px;
+}
+
+.mr-10 {
+    margin-right: 10px;
+}
+
+.p-10 {
+    padding: 10px;
+}
+
+.p-20 {
+    padding: 20px;
+}
+
+/* 动画效果 */
+.fade-enter-active, .fade-leave-active {
+    transition: opacity 0.3s;
+}
+
+.fade-enter, .fade-leave-to {
+    opacity: 0;
+}
+
+.slide-enter-active, .slide-leave-active {
+    transition: transform 0.3s;
+}
+
+.slide-enter, .slide-leave-to {
+    transform: translateX(-100%);
+}
+
+/* 滚动条样式 */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #a8a8a8;
+}
+
+/* 仓库地址样式 */
+.repo-addresses {
+    margin-top: 5px;
+}
+
+.repo-addresses > span {
+    font-weight: 500;
+    color: #606266;
+}
+
+.repo-addr-item {
+    margin-top: 3px;
+    margin-left: 10px;
+}
+
+.repo-addr-item a {
+    color: #409EFF;
+    text-decoration: none;
+    font-size: 13px;
+    word-break: break-all;
+}
+
+.repo-addr-item a:hover {
+    text-decoration: underline;
+    color: #66b1ff;
+} 

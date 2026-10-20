@@ -1,0 +1,35 @@
+# 本地私有配置 / 敏感信息（不要提交）
+src/config/*.local.php
+*.local.php
+
+# 含内部信息的模板文件（导出提测单用，请自行放置）
+src/config/提测模板.xlsx
+src/config/*.xls
+
+# 数据库导出
+*.sql.gz
+*.dump
+dump.sql
+
+# 编辑器 / 工具
+.claude/
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# 日志与临时文件
+*.log
+logs/
+src/tmp/
+tmp/
+.cache/
+
+# 依赖与构建产物
+node_modules/
+vendor/
+dist/
+
+# 运行时文件
+*.pid
+*.session
